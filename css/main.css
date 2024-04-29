@@ -121,10 +121,11 @@ input {
     border-radius: 4px;
     background-color: var(--primary-color);
     display: block;
+    transition: transform 0.3s ease;
 }
 
 .btn:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 .hidden {
@@ -213,6 +214,10 @@ input {
 .burger-btn {
     margin-right: 2rem;
     display: none;
+}
+.burger-btn svg {
+    width: 20px;
+    height: 20px;
 }
 
 .rotate {
@@ -360,6 +365,12 @@ input {
 }
 
 @media only screen and (max-width: 576px) {
+    .header__logo {
+        font-size: 2rem;
+    }
+    .signin {
+        margin-right: 1rem;
+    }
     .hero {
         padding-top: 10rem;
         padding-bottom: 14rem;
