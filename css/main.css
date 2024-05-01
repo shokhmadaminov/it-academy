@@ -40,6 +40,8 @@
     --black-2-color: #222;
     --black-5-color: #555;
     --black-3-color: #333;
+    --card-hr-color: #E9E8E8;
+    --card-border-color: #C8C8C8;
 
     /* bg-colors */
     --white-bg-color: #fff;
@@ -400,6 +402,72 @@ input {
     margin-bottom: 1.6rem;
 }
 
+/* online courses section styles */
+.online-courses {
+    background-color: var(--skyblue-bg-color);
+    padding: 6rem 0;
+    text-align: center;
+}
+.online-courses__title {
+    margin-bottom: 1.2rem;
+}
+.online-courses__text {
+    width: 100%;
+    max-width: 674px;
+    margin: 0 auto;
+    margin-bottom: 4.8rem;
+}
+.online-courses__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.4rem;
+}
+.online-courses__item {
+    background-color: var(--white-bg-color);
+    padding: 2.4rem 2.4rem 3.5rem;
+    border-radius: 6px;
+    text-align: left;
+}
+.online-courses__item-img {
+    margin-bottom: 2.4rem;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+}
+.online-courses__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 2.4rem;
+}
+.online-courses__item-header span:nth-child(odd) {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.6px solid var(--card-border-color);
+}
+.online-courses__item-hr {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: var(--card-hr-color);
+    margin-bottom: 2rem;
+}
+.online-courses__item-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+.online-courses__item-price {
+    color: var(--primary-color);
+}
+
+
 
 
 
@@ -523,6 +591,10 @@ input {
     .how-it-work__item h3 {
         margin-bottom: 1.2rem;
     }
+
+    .online-courses__list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -545,6 +617,10 @@ input {
     }
     .card-title {
         font-size: 2rem;
+    }
+
+    .online-courses {
+        padding: 4rem 0;
     }
 }
 
