@@ -407,6 +407,7 @@ input {
     background-color: var(--skyblue-bg-color);
     padding: 6rem 0;
     text-align: center;
+    margin-bottom: 12.8rem;
 }
 .online-courses__title {
     margin-bottom: 1.2rem;
@@ -467,6 +468,58 @@ input {
     color: var(--primary-color);
 }
 
+
+/* mentors section styles */
+.mentors {
+    margin-bottom: 12.8rem;
+}
+.mentors__title {
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.mentors__text {
+    width: 100%;
+    max-width: 551px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+.mentors__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.4rem;
+}
+.mentors__item {
+    box-shadow: 0 11px 55px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+.mentors__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.6rem;
+}
+.mentors__item div:not(.mentors__footer):last-child {
+    padding: 0 3.2rem 3.4rem;
+}
+.mentors__name {
+    margin-bottom: 0.8rem;
+}
+.mentors__job {
+    margin-bottom: 2.4rem;
+}
+.mentors__footer {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.mentors__footer div {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.mentors__footer p {
+    margin-left: auto;
+}
 
 
 
@@ -621,6 +674,20 @@ input {
 
     .online-courses {
         padding: 4rem 0;
+    }
+    .online-courses {
+        margin-bottom: 6rem;
+    }
+    .mentors {
+        margin-bottom: 6rem;
+    }
+    .mentors__img {
+        width: 100%;
+        height: 340px;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        object-position: top;
+
     }
 }
 
